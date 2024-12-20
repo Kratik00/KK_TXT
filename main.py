@@ -34,10 +34,10 @@ bot = Client("bot",
              #bot_token= os.environ.get("BOT_TOKEN"),
              api_id= ,
              api_hash= "")
-auth_users = []
+auth_users = [7376514183]
 #romeo  
 
-owner_id = 
+owner_id = 7376514183
 # Extras 
 failed_links = []  # List to store failed links
 fail_cap =f"**➜ This file Contain Failed Downloads while Downloding \n You Can Retry them one more time **"
@@ -56,17 +56,17 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨🏻‍💻 Devloper",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/LP_LUCIFER",
             ),
             InlineKeyboardButton(
                 text="❣️ GITHUB",
-                url="https://t.me/AJ_PYTHON_15",
+                url="LP_LUCIFER",
             ),
         ],
         [
             InlineKeyboardButton(
                 text="🪄 Updates Channel",
-                url="https://t.me/AJ_PYTHON_INFINITY",
+                url="https://t.me/LP_YAGAMI",
             ),
             
         ],
@@ -80,17 +80,17 @@ Busy = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨🏻‍💻 Devloper",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/LP_LUCIFER",
             ),
             InlineKeyboardButton(
                 text="❣️ GITHUB",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/LP_LUCIFER",
             ),
         ],
         [
             InlineKeyboardButton(
                 text="Join to Check My Status ",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/LP_YAGAMI",
             ),
             
         ],
@@ -113,12 +113,7 @@ async def send_logs(bot: Client, m: Message):
 
 # List of image URLs
 image_urls = [
-    "https://graph.org/file/a32e03bd85fa2511b12c9.jpg",
-    "https://graph.org/file/ee0ab99682b336af9a1f3.jpg",
-    "https://graph.org/file/37ec2bfe6eb404ee3bc08.jpg",
-    "https://graph.org/file/38c8abee2d89021c70a12.jpg",
-    "https://graph.org/file/10afd917ebc1459dc7602.jpg",
-    "https://graph.org/file/8de06eb27ac9ff267f4c7.jpg",
+    "https://graph.org/file/a84c854006379d60d0a83-05f46a8d761e2827c9.jpg",
     # Add more image URLs as needed
 ]
 
@@ -252,7 +247,7 @@ async def account_login(bot: Client, m: Message):
             return
     else:
         
-        editable = await m.reply_text(f"**➠ 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 𝐢𝐧 𝐀 𝐏𝐫𝐨𝐩𝐞𝐫 𝐖𝐚𝐲 \n\n➠ TXT FORMAT : LINK : URL \n➠ 𝐌𝐨𝐝𝐢𝐟𝐢𝐞𝐝 𝐁𝐲:  @AJ_PYTHON_15 **")
+        editable = await m.reply_text(f"**➠ 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 𝐢𝐧 𝐀 𝐏𝐫𝐨𝐩𝐞𝐫 𝐖𝐚𝐲 \n\n➠ TXT FORMAT : LINK : URL \n➠ 𝐌𝐨𝐝𝐢𝐟𝐢𝐞𝐝 𝐁𝐲:  @LP_LUCIFER **")
         input: Message = await bot.listen(editable.chat.id)
         editable = await editable.edit(f"**⚙️PROCESSING INPUT.......**")
 
@@ -297,7 +292,7 @@ async def account_login(bot: Client, m: Message):
                     pdfcount += 1 
                 else:
                     videocount += 1
-    await editable.edit(f"**Total links found are : {len(links)}\n┃\n┠ Total Video Count : {videocount}\n┠ Total Pdf Count: {pdfcount}  \n┠ Send From where you want to download initial is  : `1` \n┃\n┠ Send `stop` If don't want to Contine \n┖ Bot By : @AJ_PYTHON_15**" )
+    await editable.edit(f"**Total links found are : {len(links)}\n┃\n┠ Total Video Count : {videocount}\n┠ Total Pdf Count: {pdfcount}  \n┠ Send From where you want to download initial is  : `1` \n┃\n┠ Send `stop` If don't want to Contine \n┖ Bot By : @LP_LUCIFER**" )
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
@@ -444,8 +439,8 @@ async def account_login(bot: Client, m: Message):
             #     cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
 
             try:   
-                cc = f' **➭ Index » {str(count).zfill(3)} **\n**➭ Title »  {name1}.mkv**\n**➭ 𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ Quality » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : 𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀**\n**━━━━━━━✦✗✦━━━━━━━**'
-                cc1 = f'**➭ Index » {str(count).zfill(3)} **\n**➭ Title » {name1}.pdf** \n**➭ 𝐁𝐚𝐭𝐜𝐡 »  {b_name}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : 𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀**\n**━━━━━━━✦✗✦━━━━━━━**'                            
+                cc = f' **➭ Index » {str(count).zfill(3)} **\n**➭ Title »  {name1}.mkv**\n**➭ 𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ Quality » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : LUCIFER 💀**\n**━━━━━━━✦✗✦━━━━━━━**'
+                cc1 = f'**➭ Index » {str(count).zfill(3)} **\n**➭ Title » {name1}.pdf** \n**➭ 𝐁𝐚𝐭𝐜𝐡 »  {b_name}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : LUCIFER 💀**\n**━━━━━━━✦✗✦━━━━━━━**'                            
                
                 if "drive" in url:
                     try:
@@ -529,7 +524,7 @@ async def account_login(bot: Client, m: Message):
      failed_links.clear()
      os.remove(f'failed_downloads.txt')
     await m.reply_text("⚜Done⚜")
-    await m.reply_text("**Thanks You By AIMERS✨**")
+    await m.reply_text("**Thanks You By LUCIFER✨**")
     processing_request = False  # Reset the processing flag  
 
 
